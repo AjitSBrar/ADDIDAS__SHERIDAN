@@ -1,24 +1,24 @@
 package cardgameweek4;
 /**
- * Starter code for the Card class.
+ * GamePlayer class.
  * 
  * @author Addidas Sheridan 2019
  */
 
-import java.util.ArrayList;     //import ArrayList  
-import java.util.Random;        //import Random
-import java.util.List;          //import List
-import java.util.Collections;   //import Collections
-import java.util.LinkedList;    //import LinkList
+import java.util.ArrayList;       
+import java.util.Random;        
+import java.util.List;          
+import java.util.Collections;   
+import java.util.LinkedList;    
 
 public class GamePlayer {
     public static void main(String[] args) {
         
-        List<Card> deck = new ArrayList<Card>(); //create an ArrayList "cardDeck"
+        List<Card> deck = new ArrayList<Card>(); //create an ArrayList "deck"
         
         for(int x=0; x<4; x++){          //0-3 for suit (4 suits)
             for(int y=2; y<15; y++){     //2-14 for rank (13 ranks)
-                deck.add(new Card(x,y)); //create new card and add into the deck
+                deck.add(new Card(x,y)); //create new card  deck
             } //end value for
         }//end suit for
         
@@ -52,7 +52,7 @@ public class GamePlayer {
                 System.out.println("PLayer 2 wins the round");
             }//end else if
             
-            else { //war happens when both cards' rank matched
+            else { //war happens when both cards' value matched
                 System.out.println("War"); 
                 
                 //creating war cards
